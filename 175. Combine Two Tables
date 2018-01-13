@@ -36,7 +36,7 @@ Considering there might not be an address information for every person, we shoul
 MySQL
 
 select FirstName, LastName, City, State
-from Person left join Address
+from Person left out join Address
 on Person.PersonId = Address.PersonId
 ;
 Note: Using where clause to filter the records will fail if there is no address information for a person because it will not display the name information.
